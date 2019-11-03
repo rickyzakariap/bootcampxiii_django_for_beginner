@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'sevenhabits',
     'rest_framework',
+    'rest_framework_swagger',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+REST_FRAMEWORK ={
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.Autoschema'
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
