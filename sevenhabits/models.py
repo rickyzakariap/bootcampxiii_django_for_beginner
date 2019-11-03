@@ -8,9 +8,8 @@ class Roles (models.Model):
     class Meta:
         verbose_name_plural = 'roles'
 
-     def __str__(self):
+    def __str__(self):
          return self.role
-
     def __repr__(self):
         return self.role
 
@@ -24,6 +23,5 @@ class Goals(models.Model):
 
     def __str__(self):
         return self.goal
-
     def __repr__(self):
         return self.goal
